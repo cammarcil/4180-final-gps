@@ -1,1 +1,7 @@
 # 4180-final-gps
+
+This code is designed for the ECE 4180 GPS Car Project and uses the mbed platform to navigate a vehicle autonomously. It integrates various components such as a GPS module, a digital compass (LSM9DS1 IMU), and motor drivers. The software incorporates libraries for interfacing with the hardware and managing tasks within a real-time operating system (RTOS). It handles the asynchronous reading of GPS data, processes this data to pinpoint the vehicle's current location, and computes the direction in which the vehicle needs to move.
+
+The system calculates the vehicle's exact position by decoding GPS data and applies a moving average filter to smooth out location readings, enhancing accuracy. This processed data is used to continuously update the vehicle’s travel path towards designated waypoints. The navigation logic includes functions that calculate the direction and distance to these waypoints and adjust the vehicle’s trajectory accordingly.
+
+In the navigation code, mathematical formulas are used to determine bearings and distances between coordinates, and to adjust the vehicle’s orientation based on the compass readings. The point() function is crucial here, managing the vehicle’s steering by adjusting motor speeds to align with the correct heading. This function checks and corrects the vehicle's heading dynamically, ensuring it stays on the planned route. The entire program demonstrates how geometric calculations and control mechanisms can be implemented in real-time systems for effective autonomous navigation.
