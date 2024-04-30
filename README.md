@@ -5,3 +5,6 @@ This code is designed for the ECE 4180 GPS Car Project and uses the mbed platfor
 The system calculates the vehicle's exact position by decoding GPS data and applies a moving average filter to smooth out location readings, enhancing accuracy. This processed data is used to continuously update the vehicle’s travel path towards designated waypoints. The navigation logic includes functions that calculate the direction and distance to these waypoints and adjust the vehicle’s trajectory accordingly.
 
 In the navigation code, mathematical formulas are used to determine bearings and distances between coordinates, and to adjust the vehicle’s orientation based on the compass readings. The point() function is crucial here, managing the vehicle’s steering by adjusting motor speeds to align with the correct heading. This function checks and corrects the vehicle's heading dynamically, ensuring it stays on the planned route. The entire program demonstrates how geometric calculations and control mechanisms can be implemented in real-time systems for effective autonomous navigation.
+
+
+<img width="648" alt="image" src="https://github.com/cammarcil/4180-final-gps/assets/114452492/daa2401c-d16a-45d8-aea0-1f539b825a38">
